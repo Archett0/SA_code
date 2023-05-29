@@ -6,7 +6,7 @@ package com.nus.test;
  * @Date: Created at 14:18 2023/5/26
  * @Modified by:
  */
-public class Account {
+public class Account implements Comparable<Account>{
     private String number;
     private double balance;
 
@@ -54,4 +54,8 @@ public class Account {
     }
 
 
+    @Override
+    public int compareTo(Account o) {
+        return 0;
+    }
 }
